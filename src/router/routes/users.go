@@ -15,13 +15,13 @@ var userRoutes = []Rota{
 	{
 		URI:          "/users",
 		Method:       http.MethodGet,
-		Function:     controllers.FoundUsers,
+		Function:     controllers.FindUsers,
 		AuthRequired: false,
 	},
 	{
 		URI:          "/user/{id}",
 		Method:       http.MethodGet,
-		Function:     controllers.FoundUser,
+		Function:     controllers.FindUser,
 		AuthRequired: false,
 	},
 	{
